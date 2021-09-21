@@ -8,7 +8,7 @@
   [x] It should have a section for the footer
 
   Navbar:
-  [x] It should have a title of 'GoTravel', and clickable
+  [x] It should have a title of 'GoTravel', and clickable 
   [x] It should have at least 5 nav links
   [x] It should have a button 'Book now!' (anchor tag as the button)
 
