@@ -1,0 +1,28 @@
+.gitignore
+# Phase 1: 21/09/21
+  [x] It should have a proper HTMl5 boilerplate
+  [x] The title should show 'Welcome to GoTravel'
+  [x] It should have a section for the navigation bar
+  [x] It should have a banner section to show a large image
+  [x] It should have a section for the main content
+  [x] It should have a section for the footer
+
+  Navbar:
+  [x] It should have a title of 'GoTravel', and clickable
+  [x] It should have at least 5 nav links
+  [x] It should have a button 'Book now!' (anchor tag as the button)
+
+  Banner:
+  [x] It should have a h1 text for the title
+  [x] It should have a p tag that describes GoTravel shortly
+  [x] It should have an email address form for newsletter
+
+  Main content:
+  [x] It should have an explanation of: hotel, plane ticket, and travel accomodation
+  [x] It should show top 3 picks from the users
+  [x] It should show 3 ratings from the users
+
+  Footer:
+  [x] Show Copyright text
+  [x] Show 6 footer links
+  [x] Show social media icon
