@@ -25,3 +25,17 @@
   [x] Show Copyright text
   [x] Show 6 footer links
   [x] Show social media icon
+
+# Phase 2 24/09/21
+#WORKING ON THE NAVBAR
+  Navbar:
+  [x] Modify the links to just have 4 links
+
+  CSS-Navbar:
+  [x] Search for theme color, make it to global variabel
+  [x] Search for fonts (Lato)
+  [x] Setup fontawesome
+
+  [x] Use flexbox to align items nicely
+  [x] Style your own way!
+  [x] Use favicon to add the logo
