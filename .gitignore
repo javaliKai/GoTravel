@@ -39,3 +39,13 @@
   [x] Use flexbox to align items nicely
   [x] Style your own way!
   [x] Use favicon to add the logo
+
+# Phase 3 01/10/21
+# WORKING ON THE BANNER
+  [x] The banner should show an Image that fills the whole width
+  [x] The banner content should be placed at the very center of the image
+  [x] The h1 text should be big enough
+  [x] The form should be stylised to a decent view
+  [x] The button should be stylised following the global button style
+  [x] Fix the container overlapping issue
+  [x] Make the container background to be transparent
