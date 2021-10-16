@@ -41,6 +41,11 @@ p {
   letter-spacing: 0.4px;
 }
 
+.content-padding {
+  padding-right: 6.25rem;
+  padding-left: 6.25rem;
+}
+
 /* NAVBAR */
 .header .nav-container {
   display: flex;
@@ -120,4 +125,42 @@ p {
   margin-left: 0;
   cursor: pointer;
   font-size: 1rem;
+}
+
+/* MAIN CONTENT */
+.main-content .container {
+  background-color: var(--Lightgray);
+}
+
+.main-content .container h2 {
+  margin-top: 0;
+}
+
+.main-content .service-intro {
+  text-align: center;
+  padding: 7.8125rem 0;
+}
+
+.main-content .service-intro .intro-items:not(:last-child) {
+  margin-bottom: 2.5rem;
+}
+
+.main-content .service-intro h2 {
+  font-size: 2.5rem;
+  text-transform: capitalize;
+}
+
+.main-content .service-intro h2,
+.main-content .service-intro h3 {
+  color: var(--Navy);
+}
+
+.main-content .service-intro i {
+  font-size: 2.5rem;
+  color: var(--Navy);
+  transition: all ease-in-out 0.5s;
+}
+
+.main-content .service-intro i:hover {
+  font-size: 3.125rem;
 }
