@@ -214,3 +214,65 @@ p {
   color: var(--Navy);
   letter-spacing: 1.5px;
 }
+
+/* USER RATINGS */
+.ratings {
+  margin-top: 125px;
+}
+
+.ratings .ratings-layout {
+  display: flex;
+  flex-direction: column;
+}
+
+.ratings .ratings-layout .ratings-item {
+  background-color: var(--White);
+  display: flex;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.ratings .ratings-layout .ratings-item:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.ratings .ratings-layout .avatar {
+  height: inherit; /* The height will inherit the rating item container. So, it looks like a block at the left side */
+  float: left;
+}
+
+.ratings .ratings-layout .avatar img {
+  width: 100px;
+  height: 100px;
+}
+
+.ratings .ratings-layout .ratings-item .rating-body {
+  margin-left: 20px;
+  width: 100%;
+  text-align: justify;
+}
+
+.ratings .ratings-layout .ratings-item .rating-body .rating-head {
+  border-bottom: 3px solid var(--Lightgray);
+}
+
+.ratings .ratings-layout .ratings-item .rating-body .rating-head h3 {
+  text-transform: capitalize;
+  color: var(--Navy);
+}
+
+.ratings .ratings-layout .ratings-item .rating-body .rating-head .rating-info {
+  font-size: 11px;
+  color: gray;
+}
+
+.ratings
+  .ratings-layout
+  .ratings-item
+  .rating-body
+  .rating-head
+  .rating-info
+  i {
+  color: var(--Orange);
+}
