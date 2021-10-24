@@ -204,7 +204,7 @@ p {
 }
 
 .main-content .top-picks .card .card-items .description {
-  padding: 20px;
+  padding: 1.25rem;
   text-align: justify;
   color: var(--Navy);
 }
@@ -217,7 +217,7 @@ p {
 
 /* USER RATINGS */
 .ratings {
-  margin-top: 125px;
+  margin-top: 7.8125rem;
 }
 
 .ratings .ratings-layout {
@@ -228,7 +228,7 @@ p {
 .ratings .ratings-layout .ratings-item {
   background-color: var(--White);
   display: flex;
-  padding: 25px;
+  padding: 1.5625rem;
   border-radius: 10px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
@@ -243,12 +243,12 @@ p {
 }
 
 .ratings .ratings-layout .avatar img {
-  width: 100px;
-  height: 100px;
+  width: 6.25rem;
+  height: 6.25rem;
 }
 
 .ratings .ratings-layout .ratings-item .rating-body {
-  margin-left: 20px;
+  margin-left: 1.25rem;
   width: 100%;
   text-align: justify;
 }
@@ -263,7 +263,7 @@ p {
 }
 
 .ratings .ratings-layout .ratings-item .rating-body .rating-head .rating-info {
-  font-size: 11px;
+  font-size: 0.6875rem;
   color: gray;
 }
 
@@ -275,4 +275,71 @@ p {
   .rating-info
   i {
   color: var(--Orange);
+}
+
+/* FOOTER */
+.main-content {
+  /* To remove the remaining whitespace below footer, device - footer height */
+  min-height: calc(100vh - 50vh);
+}
+
+.footer {
+  margin-top: 5.08625rem;
+  background-color: var(--Navy);
+  height: 25vh;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr) 2fr;
+  grid-template-rows: 1fr;
+  grid-template-areas:
+    'socials links1 links2 copyright' /* 1st row */
+    'logo links1 links2 copyright'; /* 2nd row */
+  align-items: center;
+  justify-items: center;
+}
+
+.footer a,
+.footer p {
+  color: var(--Lightgray);
+  text-decoration: none;
+}
+
+.footer a i {
+  font-size: 1.5625rem;
+}
+
+.footer .socials {
+  grid-area: socials;
+}
+
+.footer .footer-links .group1 {
+  grid-area: logo;
+}
+
+.footer .footer-links .group2 {
+  grid-area: links2;
+}
+
+.footer .copyright {
+  grid-area: copyright;
+}
+
+.footer .footer-links a {
+  display: block;
+}
+
+.footer .footer-links a:hover {
+  text-decoration: underline;
+}
+
+.footer .socials i {
+  margin-right: 1.25rem;
+}
+
+.footer .socials i:hover {
+  color: var(--Orange);
+  transition: 0.15s all ease-in-out;
+}
+
+.footer .footer-links a:not(:last-child) {
+  margin-bottom: 0.625rem;
 }
