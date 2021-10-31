@@ -46,6 +46,8 @@ p {
   padding-left: 7.25rem;
 }
 
+/* INDEX STYLE STARTS HERE */
+/*************************/
 /* NAVBAR */
 .header .nav-container {
   display: flex;
@@ -84,7 +86,6 @@ p {
 }
 
 .banner {
-  /* margin-top: 5.625rem; */
   margin-top: 5.08625rem;
 }
 
@@ -342,4 +343,41 @@ p {
 
 .footer .footer-links a:not(:last-child) {
   margin-bottom: 0.625rem;
+}
+/* INDEX STYLE ENDS HERE */
+/*************************/
+
+/* BOOKING PAGE STYLE STARTS HERE */
+/*************************/
+.booking-page {
+  min-height: 100vh;
+}
+
+.booking-page::after {
+  /* I use this trick to make the background image more transparent*/
+  content: '';
+  background-image: url('./Images/repeating-bg.jpg');
+  background-repeat: repeat;
+  opacity: 0.3;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
+}
+
+.booking-form {
+  margin-top: 5.08625rem;
+  /* min-height: 31.25rem; */
+  height: 20.25rem;
+}
+
+.booking-form .container {
+  background-color: yellowgreen;
+  margin: 0 auto;
+  position: relative;
+  top: 15%;
+  padding: 1.875rem;
+  background-color: rgba(255, 255, 255, 0.78);
 }
