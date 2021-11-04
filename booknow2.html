@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./assets/style.css">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="shortcut icon" href="./assets/Images/favicon/favicon.ico" type="image/x-icon">
+  <!-- fontawesome -->
+  <script src="https://kit.fontawesome.com/2857afecf8.js" crossorigin="anonymous"></script>
+  <title>GoTravel | Booking</title>
+</head>
+<body>
+  <section class="header">
+    <nav class="nav-container">      
+      <a href="./booknow1.html" class="button"><i class="fas fa-arrow-left"></i> Back</a>
+      <a href="./index.html" class="logo">
+        <i class="fas fa-plane-departure"></i>
+        <strong><em>GoTravel</em></strong> 
+      </a>
+    </nav>
+  </section>
+  <div class="booking-page">
+    <section class="booking-form content-padding">
+      <div class="container">
+        <div class="container-header">
+          <h1>Booking Form</h1>
+          <h2>Choose Services</h2>
+        </div>
+        <div class="container-progress">
+          <!-- STEPS: fill in personal info, choose services, and lastly confirm booking -->
+          <div class="step1"><p>Step 1</p></div>
+          <div class="step2" style="background-color:var(--Orange);"><p>Step 2</p></div>
+          <div class="step3"><p>Step 3</p></div>
+        </div>
+        <form action="#">
+          <p>Available Destination:</p>
+          <select name="destination" id="destination">
+            <option value="Bali,Indonesia">Bali, Indonesia</option>
+            <option value="London,UK">London, UK</option>
+            <option value="Rome,Italy">Rome, Italy</option>
+            <option value="Paris,France">Paris, France</option>
+            <option value="Beijing,China">Beijing, China</option>
+            <option value="Tokyo,Japan" disabled>Tokyo, Japan</option>
+            <option value="Copenhagen,Denmark" disabled>Copenhagen, Denmark</option>
+          </select>
+          
+          <p>Flight:</p>
+          <div class="flight-input">
+            <div class="flight-items">
+              <p>Departure</p>
+              <input type="date" name="departure" id="departure">
+            </div>
+            <div class="flight-items">
+              <p>Return</p>
+              <input type="date" name="return" id="return">
+            </div>
+          </div>
+
+          <p>Travel Packages:</p>
+          <div class="travel-packages">
+            <div class="package-item">
+              <input type="radio" name="packages" id="regular" value="regular"><br>
+              <label for="regular">
+                <h2><i class="fas fa-route"></i></h2>
+                <h2>Regular</h2>
+                <h2>$300/Person</h2>
+                <div class="package-description">
+                  <p>Tour Guide: <i class="fas fa-check"></i></p>
+                  <p>Hotel: <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></p>
+                  <p>Restaurants: <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></p>
+                  <p>Travel Sites: 3-5</p>
+                  <p>Fine Dining: <i class="fas fa-times"></i></p>
+                  <p>Attractions: <i class="fas fa-times"></i></p>
+                </div>
+              </label>
+            </div>
+            <div class="package-item">
+              <input type="radio" name="packages" id="premium" value="premium"><br>
+              <label for="premium">
+                <h2><i class="fas fa-hot-tub"></i></h2>
+                <h2>Premium</h2>
+                <h2>$500/Person</h2>
+                <div class="package-description">
+                  <p>Tour Guide: <i class="fas fa-check"></i></p>
+                  <p>Hotel: <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></p>
+                  <p>Restaurants: <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></p>
+                  <p>Travel Sites: 5-7</p>
+                  <p>Fine Dining: <i class="fas fa-times"></i></p>
+                  <p>Attractions: <i class="fas fa-check"></i></p>
+                </div>
+              </label>
+            </div>
+            <div class="package-item">
+              <input type="radio" name="packages" id="luxury" value="luxury"><br>
+              <label for="luxury">
+                <h2><i class="far fa-gem"></i></h2>
+                <h2>Luxury</h2>
+                <h2>$1000/Person</h2>
+                <div class="package-description">
+                  <p>Tour Guide: <i class="fas fa-check"></i></p>
+                  <p>Hotel: <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></p>
+                  <p>Restaurants: <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></p>
+                  <p>Travel Sites: 7-9</p>
+                  <p>Fine Dining: <i class="fas fa-check"></i></p>
+                  <p>Attractions: <i class="fas fa-check"></i></p>
+                </div>
+              </label>
+            </div>
+          </div>
+
+          <br>
+          <a href="./booknow2.html" class="next-button">Next <i class="fas fa-arrow-right"></i></a>
+        </form>
+      </div>
+    </section>
+  </div>
+</body>
+</html>

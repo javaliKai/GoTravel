@@ -256,6 +256,21 @@ var countries = [
 
 // I used this to generate country selection since there are too many countries to be written manually
 // Data source: https://www.html-code-generator.com/javascript/json/country-names
-countries.forEach(country => {
-  console.log(`<option value="${country}">${country}</option>`)
-})
+// countries.forEach(country => {
+//   console.log(`<option value="${country}">${country}</option>`)
+// })
+
+let destination = {
+  'Bali': 'Indonesia',
+  'London': 'UK',
+  'Rome': 'Italy',
+  'Paris': 'France',
+  'Beijing': 'China',
+  'Tokyo': 'Japan',
+  'Copenhagen': 'Denmark'
+}
+
+
+Object.keys(destination).forEach(key => {
+  console.log(`<option value="${key},${destination[key]}">${key},${destination[key]}</option>`)
+});

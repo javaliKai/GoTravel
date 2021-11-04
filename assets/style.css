@@ -189,7 +189,7 @@ p {
   transform: scale(1.05);
 }
 
-.main-content .top-picks .card .card-items:not(:last-child) {
+.main-content .top-picks .card .card-items {
   margin-bottom: 1.875rem;
 }
 
@@ -350,14 +350,16 @@ p {
 /* BOOKING PAGE STYLE STARTS HERE */
 /*************************/
 .booking-page {
-  min-height: 100vh;
+  min-height: 220vh;
+  position: relative;
 }
 
 .booking-page::after {
   /* I use this trick to make the background image more transparent*/
   content: '';
   background-image: url('./Images/repeating-bg.jpg');
-  background-repeat: repeat;
+  background-size: cover;
+  background-repeat: repeat-y;
   opacity: 0.3;
   top: 0;
   left: 0;
@@ -369,15 +371,139 @@ p {
 
 .booking-form {
   margin-top: 5.08625rem;
-  /* min-height: 31.25rem; */
   height: 20.25rem;
 }
 
 .booking-form .container {
-  background-color: yellowgreen;
   margin: 0 auto;
+  max-width: 48.0625rem;
   position: relative;
   top: 15%;
   padding: 1.875rem;
   background-color: rgba(255, 255, 255, 0.78);
+}
+
+.booking-form .container-header {
+  text-align: center;
+  text-transform: capitalize;
+}
+
+.booking-form .container-header h1 {
+  font-size: 36px;
+}
+
+.booking-form .container-progress {
+  min-height: 5vh;
+  border: 1px solid var(--Lightgray);
+  border-radius: 20px;
+}
+
+.booking-form .container-progress .step1,
+.booking-form .container-progress .step2,
+.booking-form .container-progress .step3 {
+  text-align: center;
+  display: inline-block;
+  min-height: 5vh;
+  width: 33%;
+  margin: 0;
+  border-radius: 20px;
+}
+
+.booking-form .container-progress p {
+  color: var(--Lightgray);
+}
+
+.booking-form form p {
+  font-weight: bold;
+  margin-top: 25px;
+  margin-bottom: 7px;
+}
+
+.booking-form form input[type='text'],
+.booking-form form input[type='email'],
+.booking-form form input[type='date'],
+.booking-form form input[type='tel'],
+.booking-form form select {
+  width: 90%;
+  height: 30px;
+  margin-bottom: 20px;
+  padding: 3px;
+  font-family: 'Lato', sans-serif;
+}
+
+.booking-form form input[type='radio'] {
+  cursor: pointer;
+}
+
+.booking-form form textarea {
+  font-family: 'Lato', sans-serif;
+  letter-spacing: 1.2px;
+}
+
+.booking-form form .radio-input {
+  margin-bottom: 45px;
+}
+
+.booking-form form input[type='file'] {
+  margin-bottom: 45px;
+}
+
+.booking-form form .next-button {
+  background-color: var(--Orange);
+  padding: 10px;
+  margin-top: 20px;
+  color: var(--White);
+  text-decoration: none;
+  border: 1px solid var(--Orange);
+  border-radius: 20px;
+  display: inline-block;
+  transition: all ease-in 0.22s;
+}
+
+.booking-form form .next-button:hover {
+  background-color: var(--White);
+  color: var(--Orange);
+}
+
+.booking-form form .flight-input {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+.booking-form form .travel-packages {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+.booking-form form .travel-packages .package-item {
+  width: 25%;
+  min-height: 45vh;
+  background-color: var(--Lightgray);
+  border: 1px solid var(--Navy);
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.booking-form form .travel-packages .package-item label {
+  cursor: pointer;
+}
+
+.booking-form form .travel-packages .package-item p {
+  text-align: left;
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+.booking-form form .travel-packages .package-item h2 {
+  color: #14213d;
+}
+
+.booking-form form .travel-packages .package-item .package-description {
+  /* max-width: 25%; */
 }

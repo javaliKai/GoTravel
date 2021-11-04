@@ -15,12 +15,16 @@
   <title>GoTravel | Booking</title>
 </head>
 <body>
+  <section class="header">
+    <nav class="nav-container">      
+      <a href="./index.html" class="button"><i class="fas fa-arrow-left"></i> Back</a>
+      <a href="./index.html" class="logo">
+        <i class="fas fa-plane-departure"></i>
+        <strong><em>GoTravel</em> </strong> 
+      </a>
+    </nav>
+  </section>
   <div class="booking-page">
-    <section class="header">
-      <nav class="nav-container">      
-        <a href="./index.html" class="button"><i class="fas fa-arrow-left"></i> Back</a>
-      </nav>
-    </section>
     <section class="booking-form content-padding">
       <div class="container">
         <div class="container-header">
@@ -29,9 +33,9 @@
         </div>
         <div class="container-progress">
           <!-- STEPS: fill in personal info, choose services, and lastly confirm booking -->
-          <p>Step 1</p> 
-          <p>Step 2</p>
-          <p>Step 3</p>
+          <div class="step1" style="background-color:var(--Orange);"><p>Step 1</p></div>
+          <div class="step2"><p>Step 2</p></div>
+          <div class="step3"><p>Step 3</p></div>
         </div>
         <form action="#">
           <p>Full Name:</p>
@@ -44,12 +48,14 @@
           <input type="date" id="birthdate">
 
           <p>Gender:</p>
-          <input type="radio" id="gender" name="gender" value="male">
-          <label for="male">Male</label>
-          <input type="radio" id="gender" name="gender" value="female">
-          <label for="male">Female</label>
+          <div class="radio-input">
+            <input type="radio" id="gender" name="gender" value="male">
+            <label for="male">Male</label>
+            <input type="radio" id="gender" name="gender" value="female">
+            <label for="female">Female</label>
+          </div>
 
-          <p>Country: </p>
+          <p>Citizen Of: </p>
           <select name="country" id="country">
             <option value="Afghanistan">Afghanistan</option>
             <option value="Aland Islands">Aland Islands</option>
@@ -315,10 +321,10 @@
           <input type="file" name="passport-image" id="passport-image" accept=".pdf">
 
           <br>
-          <input type="checkbox" name="terms-regulation" id="terms-regulation" required><label for="terms-regulation">I accept GoTravel's <strong>terms and regulations</strong> </label>
+          <input type="checkbox" name="terms-regulation" id="terms-regulation" required><label for="terms-regulation">I accept GoTravel's <strong><u>terms and regulations</u></strong> </label>
 
           <br>
-          <a href="#" class="button next-button">Next</a>
+          <a href="./booknow2.html" class="next-button">Next <i class="fas fa-arrow-right"></i></a>
         </form>
       </div>
     </section>
