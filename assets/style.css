@@ -350,7 +350,7 @@ p {
 /* BOOKING PAGE STYLE STARTS HERE */
 /*************************/
 .booking-page {
-  min-height: 220vh;
+  height: 75.5625rem;
   position: relative;
 }
 
@@ -410,7 +410,7 @@ p {
 }
 
 .booking-form .container-progress p {
-  color: var(--Lightgray);
+  color: gray;
 }
 
 .booking-form form p {
@@ -435,6 +435,14 @@ p {
   cursor: pointer;
 }
 
+.booking-form form input[type='number'] {
+  width: 20%;
+  height: 30px;
+  margin-bottom: 20px;
+  padding: 3px;
+  font-family: 'Lato', sans-serif;
+}
+
 .booking-form form textarea {
   font-family: 'Lato', sans-serif;
   letter-spacing: 1.2px;
@@ -448,7 +456,7 @@ p {
   margin-bottom: 45px;
 }
 
-.booking-form form .next-button {
+.booking-form .next-button {
   background-color: var(--Orange);
   padding: 10px;
   margin-top: 20px;
@@ -458,9 +466,10 @@ p {
   border-radius: 20px;
   display: inline-block;
   transition: all ease-in 0.22s;
+  cursor: pointer;
 }
 
-.booking-form form .next-button:hover {
+.booking-form .next-button:hover {
   background-color: var(--White);
   color: var(--Orange);
 }
@@ -504,6 +513,42 @@ p {
   color: #14213d;
 }
 
-.booking-form form .travel-packages .package-item .package-description {
-  /* max-width: 25%; */
+.booking-form .container .booking-details {
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.booking-form .container table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.booking-form .container table td,
+.booking-form .container table th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+.booking-form .container table tr:nth-child(even) {
+  background-color: #dddddd;
+}
+
+.booking-form .container .booking-caption p {
+  width: 85%;
+}
+
+.booking-form .container .finish-button {
+  margin-top: 100px;
+  display: block;
+  text-align: center;
+}
+
+.booking-page .finish {
+  margin-top: 0;
+}
+
+.booking-page .finish-container {
+  text-align: center;
 }

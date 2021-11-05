@@ -34,10 +34,10 @@
         <div class="container-progress">
           <!-- STEPS: fill in personal info, choose services, and lastly confirm booking -->
           <div class="step1"><p>Step 1</p></div>
-          <div class="step2" style="background-color:var(--Orange);"><p>Step 2</p></div>
+          <div class="step2" style="background-color:var(--Orange);"><p style="color: white">Step 2</p></div>
           <div class="step3"><p>Step 3</p></div>
         </div>
-        <form action="#">
+        <form action="./booknow3.html">
           <p>Available Destination:</p>
           <select name="destination" id="destination">
             <option value="Bali,Indonesia">Bali, Indonesia</option>
@@ -112,9 +112,11 @@
               </label>
             </div>
           </div>
+          <p>Number of Person:</p>
+          <input type="number" name="person" id="person" min="1" max="10" value="1">
 
           <br>
-          <a href="./booknow2.html" class="next-button">Next <i class="fas fa-arrow-right"></i></a>
+          <button class="next-button" type="submit">Next <i class="fas fa-arrow-right"></i></button>
         </form>
       </div>
     </section>
