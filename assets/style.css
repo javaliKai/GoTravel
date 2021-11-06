@@ -137,9 +137,39 @@ p {
   margin-top: 0;
 }
 
+/* ABOUT SECTION */
+.main-content .about {
+  margin-top: 7.8125rem;
+}
+
+.main-content .about h2 {
+  text-transform: capitalize;
+  letter-spacing: 2.5px;
+  color: var(--Navy);
+  font-size: 2.5rem;
+  text-align: center;
+}
+
+.main-content .about p {
+  line-height: 1.5;
+  width: 50%;
+  margin-left: 20px;
+}
+
+.main-content .about .about-content {
+  height: 100%;
+  display: flex;
+}
+
+.main-content .about .about-content img {
+  height: 16.0625rem;
+  width: 373px;
+}
+
+/* SERVICE INTRO SECTION */
 .main-content .service-intro {
   text-align: center;
-  padding: 7.8125rem 0;
+  margin-top: 12.8125rem;
 }
 
 .main-content .service-intro .intro-items:not(:last-child) {
@@ -168,6 +198,10 @@ p {
 }
 
 /* TOP PICKS */
+.main-content .top-picks {
+  margin-top: 12.8125rem;
+}
+
 .main-content .top-picks .card {
   display: flex;
   flex-direction: row;
@@ -219,6 +253,10 @@ p {
 /* USER RATINGS */
 .ratings {
   margin-top: 7.8125rem;
+}
+
+.ratings h2 {
+  color: var(--Navy);
 }
 
 .ratings .ratings-layout {
@@ -276,6 +314,35 @@ p {
   .rating-info
   i {
   color: var(--Orange);
+}
+
+/* PARTNERS SECTION */
+.main-content .partners {
+  margin-top: 7.8125rem;
+}
+
+.main-content .partners h2 {
+  text-transform: capitalize;
+  color: var(--Navy);
+}
+
+.main-content .partners .partners-content {
+  display: flex;
+  justify-content: space-around;
+}
+
+.main-content .partners .partners-content img {
+  width: 150px;
+  height: 150px;
+}
+
+/* CONTACT */
+.main-content .contact {
+  margin-top: 7.8125rem;
+}
+
+.main-content .contact h2 {
+  color: var(--Navy);
 }
 
 /* FOOTER */
@@ -350,7 +417,8 @@ p {
 /* BOOKING PAGE STYLE STARTS HERE */
 /*************************/
 .booking-page {
-  height: 75.5625rem;
+  /* height: 75.5625rem; */
+  height: 85.5625rem;
   position: relative;
 }
 
