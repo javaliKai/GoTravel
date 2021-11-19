@@ -1,0 +1,636 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap');
+
+/* GLOBAL */
+:root {
+  --Black: #000000;
+  --Navy: #14213d;
+  --Orange: #fca311;
+  --Lightgray: #f1f1f1;
+  --White: #fff;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: var(--Lightgray);
+  box-sizing: border-box;
+}
+
+.button {
+  background-color: var(--Orange);
+  padding: 1rem;
+  color: var(--White);
+  text-decoration: none;
+  border: 1px solid var(--Orange);
+  border-radius: 20px;
+  display: inline-block;
+  margin: 0.9375rem;
+  transition: all ease-in 0.22s;
+}
+
+.button:hover {
+  background-color: var(--White);
+  color: var(--Orange);
+}
+
+p {
+  line-height: 1.5;
+  font-size: 1rem;
+  color: var(--Black);
+  letter-spacing: 0.4px;
+}
+
+.content-padding {
+  padding-right: 7.25rem;
+  padding-left: 7.25rem;
+}
+
+/* INDEX STYLE STARTS HERE */
+/*************************/
+/* NAVBAR */
+@media screen and (min-width: 800px) {
+  .header .nav-container {
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--White);
+    position: fixed;
+    z-index: 1; /* If I remove this, the banner container will overlay*/
+    top: 0;
+    width: 100%;
+  }
+
+  .header .logo {
+    text-decoration: none;
+    font-size: 1.375rem;
+    color: var(--Orange);
+    padding: 1.7rem;
+  }
+
+  .nav-links {
+    padding: 1.75rem;
+  }
+
+  .nav-links a {
+    text-decoration: none;
+    color: var(--Navy);
+    transition: all ease-in-out 0.2s;
+  }
+
+  .nav-links a:hover {
+    color: var(--Orange);
+  }
+
+  /* add margin right except the last element */
+  .nav-links a:not(:last-child) {
+    margin-right: 1.875rem;
+  }
+
+  /* BANNER */
+  .banner {
+    background-image: url('../Images/banner.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 39.0625rem;
+    width: 100%;
+    margin-top: 5.08625rem;
+  }
+
+  .banner .container {
+    width: 39.5rem;
+    margin: 0 auto;
+    position: relative;
+    top: 15%;
+    padding: 1.875rem;
+    background-color: rgba(255, 255, 255, 0.78);
+  }
+
+  .banner .container h1 {
+    text-transform: capitalize;
+    font-size: 2.1875rem;
+    color: var(--Navy);
+  }
+
+  .banner .container #email {
+    width: 31.25rem;
+    height: 1.5625rem;
+    padding: 0.625rem;
+    font-size: 1rem;
+  }
+
+  .banner .container .btn-submit {
+    display: block;
+    margin-left: 0;
+    cursor: pointer;
+    font-size: 1rem;
+  }
+
+  /* MAIN CONTENT */
+  .main-content .container {
+    background-color: var(--Lightgray);
+  }
+
+  .main-content .container h2 {
+    margin-top: 0;
+  }
+
+  /* ABOUT SECTION */
+  .main-content .about {
+    margin-top: 7.8125rem;
+  }
+
+  .main-content .about h2 {
+    text-transform: capitalize;
+    letter-spacing: 2.5px;
+    color: var(--Navy);
+    font-size: 2.5rem;
+    text-align: center;
+  }
+
+  .main-content .about p {
+    line-height: 1.5;
+    width: 50%;
+    margin-left: 1.25rem;
+  }
+
+  .main-content .about .about-content {
+    height: 100%;
+    display: flex;
+  }
+
+  /* .main-content .about .about-content img {
+    height: 16.0625rem;
+    width: 23.3125rem;
+  } */
+
+  .main-content .about .about-content .about-image {
+    background-image: url('../Images/gotravel-group.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 16.0625rem;
+    width: 23.3125rem;
+    margin: 1rem;
+  }
+
+  /* SERVICE INTRO SECTION */
+  .main-content .service-intro {
+    text-align: center;
+    margin-top: 12.8125rem;
+  }
+
+  .main-content .service-intro .intro-items:not(:last-child) {
+    margin-bottom: 2.5rem;
+  }
+
+  .main-content .service-intro h2 {
+    font-size: 2.5rem;
+    text-transform: capitalize;
+    letter-spacing: 2.5px;
+  }
+
+  .main-content .service-intro h2,
+  .main-content .service-intro h3 {
+    color: var(--Navy);
+  }
+
+  .main-content .service-intro i {
+    font-size: 2.5rem;
+    color: var(--Navy);
+    transition: all ease-in-out 0.5s;
+  }
+
+  .main-content .service-intro i:hover {
+    font-size: 3.125rem;
+  }
+
+  /* TOP PICKS */
+  .main-content .top-picks {
+    margin-top: 12.8125rem;
+  }
+
+  .main-content .top-picks .card {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .main-content .top-picks .card .card-items {
+    width: 15.625rem;
+    height: 28.75rem;
+    background-color: var(--White);
+    overflow: hidden;
+    border-radius: 7px;
+    transition: all ease-in-out 0.25s;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  }
+
+  .main-content .top-picks .card .card-items:hover {
+    transform: scale(1.05);
+  }
+
+  .main-content .top-picks .card .card-items {
+    margin-bottom: 1.875rem;
+  }
+
+  .main-content .top-picks .card .card-items a {
+    text-decoration: none;
+  }
+
+  .main-content .top-picks .card .card-items img {
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 12.5rem;
+    width: inherit; /* Make the width the same as the card container width */
+  }
+
+  .main-content .top-picks .card .card-items .description {
+    padding: 1.25rem;
+    text-align: left;
+    color: var(--Navy);
+  }
+
+  .main-content .top-picks h2,
+  .main-content .top-picks h3 {
+    color: var(--Navy);
+    letter-spacing: 1.5px;
+  }
+
+  /* USER RATINGS */
+  .ratings {
+    margin-top: 7.8125rem;
+  }
+
+  .ratings h2 {
+    color: var(--Navy);
+  }
+
+  .ratings .ratings-layout {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .ratings .ratings-layout .ratings-item {
+    background-color: var(--White);
+    display: flex;
+    padding: 1.5625rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  }
+
+  .ratings .ratings-layout .ratings-item:not(:last-child) {
+    margin-bottom: 1.25rem;
+  }
+
+  .ratings .ratings-layout .avatar {
+    height: inherit; /* The height will inherit the rating item container. So, it looks like a block at the left side */
+    float: left;
+  }
+
+  .ratings .ratings-layout .avatar img {
+    width: 6.25rem;
+    height: 6.25rem;
+  }
+
+  .ratings .ratings-layout .ratings-item .rating-body {
+    margin-left: 1.25rem;
+    width: 100%;
+    text-align: justify;
+  }
+
+  .ratings .ratings-layout .ratings-item .rating-body .rating-head {
+    border-bottom: 3px solid var(--Lightgray);
+  }
+
+  .ratings .ratings-layout .ratings-item .rating-body .rating-head h3 {
+    text-transform: capitalize;
+    color: var(--Navy);
+  }
+
+  .ratings
+    .ratings-layout
+    .ratings-item
+    .rating-body
+    .rating-head
+    .rating-info {
+    font-size: 0.6875rem;
+    color: gray;
+  }
+
+  .ratings
+    .ratings-layout
+    .ratings-item
+    .rating-body
+    .rating-head
+    .rating-info
+    i {
+    color: var(--Orange);
+  }
+
+  /* PARTNERS SECTION */
+  .main-content .partners {
+    margin-top: 7.8125rem;
+  }
+
+  .main-content .partners h2 {
+    text-transform: capitalize;
+    color: var(--Navy);
+  }
+
+  .main-content .partners .partners-content {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .main-content .partners .partners-content img {
+    width: 12.5rem;
+    height: 11.25rem;
+  }
+
+  /* CONTACT */
+  .main-content .contact {
+    margin-top: 7.8125rem;
+  }
+
+  .main-content .contact h2 {
+    color: var(--Navy);
+  }
+
+  /* FOOTER */
+  .main-content {
+    /* To remove the remaining whitespace below footer, device - footer height */
+    min-height: calc(100vh - 50vh);
+  }
+
+  .footer {
+    margin-top: 5.08625rem;
+    background-color: var(--Navy);
+    height: 25vh;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr) 2fr;
+    grid-template-rows: 1fr;
+    grid-template-areas:
+      'socials links1 links2 copyright' /* 1st row */
+      'logo links1 links2 copyright'; /* 2nd row */
+    align-items: center;
+    justify-items: center;
+  }
+
+  .footer a,
+  .footer p {
+    color: var(--Lightgray);
+    text-decoration: none;
+  }
+
+  .footer a i {
+    font-size: 1.5625rem;
+  }
+
+  .footer .socials {
+    grid-area: socials;
+  }
+
+  .footer .footer-links .group1 {
+    grid-area: logo;
+  }
+
+  .footer .footer-links .group2 {
+    grid-area: links2;
+  }
+
+  .footer .copyright {
+    grid-area: copyright;
+  }
+
+  .footer .footer-links a {
+    display: block;
+  }
+
+  .footer .footer-links a:hover {
+    text-decoration: underline;
+  }
+
+  .footer .socials i {
+    margin-right: 1.25rem;
+  }
+
+  .footer .socials i:hover {
+    color: var(--Orange);
+    transition: 0.15s all ease-in-out;
+  }
+
+  .footer .footer-links a:not(:last-child) {
+    margin-bottom: 0.625rem;
+  }
+  /* INDEX STYLE ENDS HERE */
+  /*************************/
+
+  /* BOOKING PAGE STYLE STARTS HERE */
+  /*************************/
+  .booking-page {
+    /* height: 75.5625rem; */
+    height: 85.5625rem;
+    position: relative;
+  }
+
+  .booking-page::after {
+    /* I use this trick to make the background image more transparent*/
+    content: '';
+    background-image: url('../Images/repeating-bg.jpg');
+    background-size: cover;
+    background-repeat: repeat-y;
+    opacity: 0.3;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+  }
+
+  .booking-form {
+    margin-top: 5.08625rem;
+    height: 20.25rem;
+  }
+
+  .booking-form .container {
+    margin: 0 auto;
+    max-width: 48.0625rem;
+    position: relative;
+    top: 15%;
+    padding: 1.875rem;
+    background-color: rgba(255, 255, 255, 0.78);
+  }
+
+  .booking-form .container-header {
+    text-align: center;
+    text-transform: capitalize;
+  }
+
+  .booking-form .container-header h1 {
+    font-size: 2.25rem;
+  }
+
+  .booking-form .container-progress {
+    min-height: 5vh;
+    border: 1px solid var(--Lightgray);
+    border-radius: 20px;
+  }
+
+  .booking-form .container-progress .step1,
+  .booking-form .container-progress .step2,
+  .booking-form .container-progress .step3 {
+    text-align: center;
+    display: inline-block;
+    min-height: 5vh;
+    width: 33%;
+    margin: 0;
+    border-radius: 20px;
+  }
+
+  .booking-form .container-progress p {
+    color: gray;
+  }
+
+  .booking-form form p {
+    font-weight: bold;
+    margin-top: 1.5625rem;
+    margin-bottom: 0.4375rem;
+  }
+
+  .booking-form form input[type='text'],
+  .booking-form form input[type='email'],
+  .booking-form form input[type='date'],
+  .booking-form form input[type='tel'],
+  .booking-form form select {
+    width: 90%;
+    height: 1.875rem;
+    margin-bottom: 1.25rem;
+    padding: 0.1875rem;
+    font-family: 'Lato', sans-serif;
+  }
+
+  .booking-form form input[type='radio'] {
+    cursor: pointer;
+  }
+
+  .booking-form form input[type='number'] {
+    width: 20%;
+    height: 1.875rem;
+    margin-bottom: 1.25rem;
+    padding: 0.1875rem;
+    font-family: 'Lato', sans-serif;
+  }
+
+  .booking-form form textarea {
+    font-family: 'Lato', sans-serif;
+    letter-spacing: 1.2px;
+  }
+
+  .booking-form form .radio-input {
+    margin-bottom: 2.8125rem;
+  }
+
+  .booking-form form input[type='file'] {
+    margin-bottom: 2.8125rem;
+  }
+
+  .booking-form .next-button {
+    background-color: var(--Orange);
+    padding: 0.625rem;
+    margin-top: 1.25rem;
+    color: var(--White);
+    text-decoration: none;
+    border: 1px solid var(--Orange);
+    border-radius: 20px;
+    display: inline-block;
+    transition: all ease-in 0.22s;
+    cursor: pointer;
+  }
+
+  .booking-form .next-button:hover {
+    background-color: var(--White);
+    color: var(--Orange);
+  }
+
+  .booking-form form .flight-input {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    text-align: center;
+  }
+
+  .booking-form form .travel-packages {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    text-align: center;
+  }
+
+  .booking-form form .travel-packages .package-item {
+    width: 25%;
+    min-height: 45vh;
+    background-color: var(--Lightgray);
+    border: 1px solid var(--Navy);
+    border-radius: 0.625rem;
+    padding: 1.25rem;
+    text-align: center;
+    margin-bottom: 1.25rem;
+  }
+
+  .booking-form form .travel-packages .package-item label {
+    cursor: pointer;
+  }
+
+  .booking-form form .travel-packages .package-item p {
+    text-align: left;
+    margin: 0;
+    font-size: 0.9rem;
+  }
+
+  .booking-form form .travel-packages .package-item h2 {
+    color: #14213d;
+  }
+
+  .booking-form .container .booking-details {
+    text-align: center;
+    margin-top: 3.125rem;
+    margin-bottom: 3.125rem;
+  }
+
+  .booking-form .container table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+
+  .booking-form .container table td,
+  .booking-form .container table th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+  }
+
+  .booking-form .container table tr:nth-child(even) {
+    background-color: #dddddd;
+  }
+
+  .booking-form .container .booking-caption p {
+    width: 85%;
+  }
+
+  .booking-form .container .finish-button {
+    margin-top: 100px;
+    display: block;
+    text-align: center;
+  }
+
+  .booking-page .finish {
+    margin-top: 0;
+  }
+
+  .booking-page .finish-container {
+    text-align: center;
+  }
+}

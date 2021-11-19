@@ -1,0 +1,112 @@
+/* For device with width 480px */
+@media screen and (max-width: 800px) {
+  * {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    overflow-x: hidden;
+  }
+
+  .content-padding {
+    padding-right: 0.5rem;
+    padding-left: 0.5rem;
+  }
+
+  /* HEADER SECTION STYLE STARTS HERE */
+  .header .nav-container {
+    background: var(--White);
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .header .nav-links {
+    display: none;
+  }
+
+  .header .logo {
+    text-decoration: none;
+    font-size: 1.375rem;
+    color: var(--Orange);
+    padding: 1.7rem 1rem;
+  }
+  /* HEADER SECTION STYLE ENDS HERE */
+  /*********************************************/
+  /* BANNER SECTION STYLE STARTS HERE */
+  .banner {
+    background-image: url('../Images/banner.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 39.0625rem;
+    width: 100%;
+    margin-top: 0.08625rem;
+  }
+
+  .banner .container {
+    margin: 0 auto;
+    position: relative;
+    top: 12%;
+    padding: 1.875rem;
+    background-color: rgba(255, 255, 255, 0.78);
+  }
+
+  .banner .container h1 {
+    text-transform: capitalize;
+    font-size: 2rem;
+    color: var(--Navy);
+    margin-bottom: 1.5rem;
+  }
+
+  .banner .container #email {
+    width: 75%;
+    height: 1.5625rem;
+    padding: 0.625rem;
+    font-size: 1rem;
+  }
+
+  .banner .container .subscription {
+    margin-top: 1rem;
+  }
+
+  .banner .container .subscription p {
+    margin-bottom: 1rem;
+  }
+
+  .banner .container .btn-submit {
+    cursor: pointer;
+    font-size: 1rem;
+  }
+  /* BANNER SECTION STYLE ENDS HERE */
+  /*********************************************/
+  /* MAIN CONTENT SECTION STYLE STARTS HERE */
+  .main-content .about {
+    margin-top: 3.8125rem;
+  }
+
+  .main-content .about .about-content {
+    width: 100%;
+  }
+
+  .main-content .about h2 {
+    text-transform: capitalize;
+    letter-spacing: 2.5px;
+    color: var(--Navy);
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .main-content .about .about-content .about-image {
+    background-image: url('../Images/gotravel-group.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 15.0625rem;
+    margin: 1rem;
+  }
+
+  .main-content .about p {
+    line-height: 1.5;
+    letter-spacing: 0.5px;
+  }
+  /* MAIN CONTENT SECTION STYLE ENDS HERE */
+}
