@@ -153,7 +153,7 @@ p {
 .main-content .about p {
   line-height: 1.5;
   width: 50%;
-  margin-left: 20px;
+  margin-left: 1.25rem;
 }
 
 .main-content .about .about-content {
@@ -163,7 +163,7 @@ p {
 
 .main-content .about .about-content img {
   height: 16.0625rem;
-  width: 373px;
+  width: 23.3125rem;
 }
 
 /* SERVICE INTRO SECTION */
@@ -273,7 +273,7 @@ p {
 }
 
 .ratings .ratings-layout .ratings-item:not(:last-child) {
-  margin-bottom: 20px;
+  margin-bottom: 1.25rem;
 }
 
 .ratings .ratings-layout .avatar {
@@ -332,8 +332,8 @@ p {
 }
 
 .main-content .partners .partners-content img {
-  width: 150px;
-  height: 150px;
+  width: 12.5rem;
+  height: 11.25rem;
 }
 
 /* CONTACT */
@@ -457,7 +457,7 @@ p {
 }
 
 .booking-form .container-header h1 {
-  font-size: 36px;
+  font-size: 2.25rem;
 }
 
 .booking-form .container-progress {
@@ -483,8 +483,8 @@ p {
 
 .booking-form form p {
   font-weight: bold;
-  margin-top: 25px;
-  margin-bottom: 7px;
+  margin-top: 1.5625rem;
+  margin-bottom: 0.4375rem;
 }
 
 .booking-form form input[type='text'],
@@ -493,9 +493,9 @@ p {
 .booking-form form input[type='tel'],
 .booking-form form select {
   width: 90%;
-  height: 30px;
-  margin-bottom: 20px;
-  padding: 3px;
+  height: 1.875rem;
+  margin-bottom: 1.25rem;
+  padding: 0.1875rem;
   font-family: 'Lato', sans-serif;
 }
 
@@ -505,9 +505,9 @@ p {
 
 .booking-form form input[type='number'] {
   width: 20%;
-  height: 30px;
-  margin-bottom: 20px;
-  padding: 3px;
+  height: 1.875rem;
+  margin-bottom: 1.25rem;
+  padding: 0.1875rem;
   font-family: 'Lato', sans-serif;
 }
 
@@ -517,17 +517,17 @@ p {
 }
 
 .booking-form form .radio-input {
-  margin-bottom: 45px;
+  margin-bottom: 2.8125rem;
 }
 
 .booking-form form input[type='file'] {
-  margin-bottom: 45px;
+  margin-bottom: 2.8125rem;
 }
 
 .booking-form .next-button {
   background-color: var(--Orange);
-  padding: 10px;
-  margin-top: 20px;
+  padding: 0.625rem;
+  margin-top: 1.25rem;
   color: var(--White);
   text-decoration: none;
   border: 1px solid var(--Orange);
@@ -561,10 +561,10 @@ p {
   min-height: 45vh;
   background-color: var(--Lightgray);
   border: 1px solid var(--Navy);
-  border-radius: 10px;
-  padding: 20px;
+  border-radius: 0.625rem;
+  padding: 1.25rem;
   text-align: center;
-  margin-bottom: 20px;
+  margin-bottom: 1.25rem;
 }
 
 .booking-form form .travel-packages .package-item label {
@@ -583,8 +583,8 @@ p {
 
 .booking-form .container .booking-details {
   text-align: center;
-  margin-top: 50px;
-  margin-bottom: 50px;
+  margin-top: 3.125rem;
+  margin-bottom: 3.125rem;
 }
 
 .booking-form .container table {
