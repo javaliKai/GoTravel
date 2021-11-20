@@ -43,11 +43,12 @@
   }
 
   .banner .container {
-    margin: 0 auto;
+    margin-left: 10px;
+    margin-right: 10px;
     position: relative;
     top: 12%;
     padding: 1.875rem;
-    background-color: rgba(255, 255, 255, 0.78);
+    background-color: rgba(255, 255, 255, 0.68);
   }
 
   .banner .container h1 {
@@ -107,6 +108,177 @@
   .main-content .about p {
     line-height: 1.5;
     letter-spacing: 0.5px;
+    padding: 10px;
   }
   /* MAIN CONTENT SECTION STYLE ENDS HERE */
+  /*********************************************/
+  /* SERVICE INTRO SECTION STYLE STARTS HERE */
+  .main-content .service-intro {
+    margin-top: 5.8125rem;
+  }
+
+  .main-content .service-intro .intro-items:not(:last-child) {
+    margin-bottom: 2.5rem;
+  }
+
+  .main-content .service-intro h2 {
+    font-size: 2rem;
+    text-transform: capitalize;
+    letter-spacing: 2.5px;
+    margin-bottom: 33.2px;
+  }
+
+  .main-content .service-intro h2,
+  .main-content .service-intro h3 {
+    color: var(--Navy);
+  }
+
+  .main-content .service-intro h3 {
+    margin-bottom: 8px;
+  }
+
+  .main-content .service-intro i {
+    font-size: 2.5rem;
+    color: var(--Navy);
+  }
+  /* SERVICE INTRO SECTION STYLE ENDS HERE */
+  /*********************************************/
+  /* TOP PICKS SECTION STYLE STARTS HERE */
+  .main-content .top-picks {
+    margin-top: 5.8125rem;
+  }
+
+  .main-content .top-picks .card {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+    align-content: center;
+    flex-wrap: wrap;
+  }
+
+  .main-content .top-picks .card .card-items {
+    width: 15.625rem;
+    height: 27.75rem;
+    background-color: var(--White);
+    overflow: hidden;
+    border-radius: 7px;
+    transition: all ease-in-out 0.25s;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  }
+
+  .main-content .top-picks .card .card-items {
+    margin-bottom: 1.875rem;
+  }
+
+  .main-content .top-picks .card .card-items a {
+    text-decoration: none;
+  }
+
+  .main-content .top-picks .card .card-items img {
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 12.5rem;
+    width: inherit; /* Make the width the same as the card container width */
+  }
+
+  .main-content .top-picks .card .card-items .description {
+    padding: 1.25rem;
+    text-align: left;
+    color: var(--Navy);
+  }
+
+  .main-content .top-picks h2,
+  .main-content .top-picks h3 {
+    color: var(--Navy);
+    letter-spacing: 1.5px;
+  }
+
+  .main-content .top-picks h2 {
+    margin-bottom: 33.2px;
+  }
+
+  .main-content .top-picks h3 {
+    margin-bottom: 8px;
+  }
+  /* TOP PICKS SECTION STYLE ENDS HERE */
+  /*********************************************/
+  /* RATINGS SECTION STYLE STARTS HERE */
+  .ratings {
+    margin-top: 5.8125rem;
+  }
+
+  .ratings h2 {
+    color: var(--Navy);
+    margin-bottom: 33.2px;
+  }
+
+  .ratings .ratings-layout {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .ratings .ratings-layout .ratings-item {
+    background-color: var(--White);
+    display: flex;
+    flex-direction: column;
+    padding: 1.5625rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  }
+
+  .ratings .ratings-layout .ratings-item:not(:last-child) {
+    margin-bottom: 1.25rem;
+  }
+
+  .ratings .ratings-layout .avatar {
+    height: inherit; /* The height will inherit the rating item container. So, it looks like a block at the left side */
+  }
+
+  .ratings .ratings-layout .avatar img {
+    width: 6.25rem;
+    height: 6.25rem;
+  }
+
+  .ratings .ratings-layout .ratings-item .rating-body {
+    /* margin-left: 1.25rem; */
+    width: 100%;
+    text-align: justify;
+  }
+
+  .ratings .ratings-layout .ratings-item .rating-body .rating-head {
+    border-bottom: 3px solid var(--Lightgray);
+    padding-bottom: 10px;
+  }
+
+  .ratings .ratings-layout .ratings-item .rating-body .rating-head h3 {
+    text-transform: capitalize;
+    color: var(--Navy);
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  .ratings
+    .ratings-layout
+    .ratings-item
+    .rating-body
+    .rating-head
+    .rating-info {
+    font-size: 0.6875rem;
+    color: gray;
+  }
+
+  .ratings
+    .ratings-layout
+    .ratings-item
+    .rating-body
+    .rating-head
+    .rating-info
+    i {
+    color: var(--Orange);
+  }
+
+  .ratings .ratings-layout .ratings-item .rating-body .rating-content {
+    margin-top: 10px;
+  }
+  /* RATINGS SECTION STYLE ENDS HERE */
 }
