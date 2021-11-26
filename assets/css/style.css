@@ -347,6 +347,7 @@ p {
   .main-content .partners .partners-content img {
     width: 12.5rem;
     height: 11.25rem;
+    border-radius: 10px;
   }
 
   /* CONTACT */
