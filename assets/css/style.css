@@ -475,6 +475,7 @@ p {
   }
 
   .booking-form .container-progress {
+    display: flex;
     min-height: 5vh;
     border: 1px solid var(--Lightgray);
     border-radius: 20px;
@@ -489,6 +490,10 @@ p {
     width: 33%;
     margin: 0;
     border-radius: 20px;
+  }
+
+  .booking-form .container-progress .step-mobile {
+    display: none;
   }
 
   .booking-form .container-progress p {

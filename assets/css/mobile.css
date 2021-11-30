@@ -362,4 +362,239 @@
     font-size: 1.2rem;
   }
   /* FOOTER SECTION STYLE ENDS HERE */
+  /*********************************************/
+  /* INDEX STYLE ENDS HERE */
+
+  /*********************************************/
+  /* BOOKING PAGE STYLE STARTS HERE */
+  .booking-page {
+    /* height: 75.5625rem; */
+    /* height: 85.5625rem; */
+    position: relative;
+  }
+
+  .booking-page::after {
+    /* I use this trick to make the background image more transparent*/
+    content: '';
+    background-image: url('../Images/repeating-bg.jpg');
+    background-size: cover;
+    background-repeat: repeat-y;
+    opacity: 0.3;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+  }
+
+  .booking-form {
+    margin: 5.08625rem auto 5.08625rem auto;
+  }
+
+  .booking-form .container {
+    margin: 0 auto;
+    max-width: 48.0625rem;
+    position: relative;
+    top: 15%;
+    padding: 1.875rem;
+    background-color: rgba(255, 255, 255, 0.78);
+  }
+
+  .booking-form .container-header {
+    text-align: center;
+    text-transform: capitalize;
+  }
+
+  .booking-form .container-header h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  .booking-form .container-progress {
+    margin-top: 1rem;
+  }
+
+  .booking-form .container-progress .step1,
+  .booking-form .container-progress .step2,
+  .booking-form .container-progress .step3 {
+    display: none;
+  }
+
+  .booking-form .container-progress .step-mobile {
+    text-align: center;
+    display: inline-block;
+    width: 33%;
+    margin: 0;
+    border-radius: 20px;
+  }
+
+  .booking-form .container-progress p {
+    color: white;
+    background-color: var(--Orange);
+    padding: 0.5rem;
+  }
+
+  .booking-form form {
+    text-align: left;
+  }
+
+  .booking-form form p {
+    font-weight: bold;
+    margin-top: 1.5625rem;
+    margin-bottom: 0.5375rem;
+    text-align: left;
+  }
+
+  .booking-form form input[type='text'],
+  .booking-form form input[type='email'],
+  .booking-form form input[type='date'],
+  .booking-form form input[type='tel'],
+  .booking-form form select {
+    width: 90%;
+    height: 1.875rem;
+    margin-bottom: 1.25rem;
+    padding: 0.1875rem;
+    font-family: 'Lato', sans-serif;
+    text-align: left;
+  }
+
+  .booking-form form input[type='radio'] {
+    cursor: pointer;
+  }
+
+  .booking-form form input[type='number'] {
+    width: 20%;
+    height: 1.875rem;
+    margin-bottom: 1.25rem;
+    padding: 0.1875rem;
+    font-family: 'Lato', sans-serif;
+  }
+
+  .booking-form form input[type='checkbox'] {
+    width: 1rem;
+    height: 1rem;
+    margin-right: 5px;
+  }
+
+  .booking-form form textarea {
+    font-family: 'Lato', sans-serif;
+    letter-spacing: 1.2px;
+  }
+
+  .booking-form form .radio-input {
+    margin-bottom: 2.8125rem;
+    text-align: left;
+  }
+
+  .booking-form form input[type='file'] {
+    margin-bottom: 2.8125rem;
+  }
+
+  .booking-form .next-button {
+    background-color: var(--Orange);
+    padding: 0.625rem;
+    margin-top: 1.25rem;
+    color: var(--White);
+    text-decoration: none;
+    border: 1px solid var(--Orange);
+    border-radius: 20px;
+    display: inline-block;
+    transition: all ease-in 0.22s;
+    cursor: pointer;
+  }
+
+  .booking-form .next-button:hover {
+    background-color: var(--White);
+    color: var(--Orange);
+  }
+
+  .booking-form form .flight-input {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    text-align: center;
+  }
+
+  .booking-form form .travel-packages {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .booking-form form .travel-packages .package-item {
+    width: 60%;
+    /* min-height: 45vh; */
+    background-color: var(--Lightgray);
+    border: 1px solid var(--Navy);
+    border-radius: 0.625rem;
+    padding: 1.25rem;
+    text-align: center;
+    margin-bottom: 1.25rem;
+  }
+
+  .booking-form form .travel-packages .package-item label {
+    cursor: pointer;
+  }
+
+  .booking-form form .travel-packages .package-item p {
+    text-align: left;
+    margin: 0;
+    font-size: 0.9rem;
+  }
+
+  .booking-form form .travel-packages .package-item h2 {
+    color: #14213d;
+  }
+
+  .booking-form form .travel-packages .package-description {
+    margin-top: 25px;
+  }
+
+  .booking-form .container .booking-details {
+    text-align: center;
+    margin-top: 3.125rem;
+    margin-bottom: 3.125rem;
+  }
+
+  .booking-form .container table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+
+  .booking-form .container table td,
+  .booking-form .container table th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+  }
+
+  .booking-form .container table tr:nth-child(even) {
+    background-color: #dddddd;
+  }
+
+  .booking-form .container .booking-caption p {
+    width: 85%;
+    text-align: left;
+  }
+
+  .booking-form .container .finish-button {
+    margin-top: 100px;
+    display: block;
+    text-align: center;
+  }
+
+  .booking-page .finish {
+    margin: 0 auto;
+    height: 100vh;
+    padding: 50px;
+  }
+
+  .booking-page .finish-container {
+    text-align: center;
+  }
+  /* BOOKING PAGE STYLE ENDS HERE */
 }
