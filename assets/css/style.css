@@ -406,7 +406,7 @@ p {
   /* FOOTER */
   .main-content {
     /* To remove the remaining whitespace below footer, device - footer height */
-    min-height: calc(100vh - 50vh);
+    min-height: calc(100vh - 25vh);
   }
 
   .footer {
@@ -586,7 +586,7 @@ p {
     margin-bottom: 2.8125rem;
   }
 
-  .booking-form .next-button {
+  .next-button {
     background-color: var(--Orange);
     padding: 0.625rem;
     margin-top: 1.25rem;
@@ -599,7 +599,7 @@ p {
     cursor: pointer;
   }
 
-  .booking-form .next-button:hover {
+  .next-button:hover {
     background-color: var(--White);
     color: var(--Orange);
   }
@@ -681,5 +681,59 @@ p {
 
   .booking-page .finish-container {
     text-align: center;
+  }
+
+  .careers,
+  .contact-page,
+  .support {
+    margin-top: 7.8125rem;
+    margin-bottom: 7.8125rem;
+  }
+
+  .careers h2,
+  .support h2 {
+    color: var(--Navy);
+  }
+
+  .careers table {
+    margin: 0 auto;
+    border-collapse: collapse;
+    text-align: center;
+    vertical-align: middle;
+  }
+
+  .careers table th {
+    background-color: var(--Navy);
+    font-weight: lighter;
+    color: var(--White);
+  }
+
+  .careers table th,
+  .careers table td {
+    border: 1px solid var(--Black);
+    padding: 10px;
+    width: 10rem;
+  }
+
+  .apply-button {
+    background-color: var(--Orange);
+    padding: 0.625rem;
+    color: var(--White);
+    text-decoration: none;
+    border: 1px solid var(--Orange);
+    border-radius: 10px;
+    display: inline-block;
+    transition: all ease-in 0.22s;
+    cursor: pointer;
+  }
+
+  .apply-button:hover {
+    background-color: var(--White);
+    color: var(--Orange);
+  }
+
+  .support-content {
+    display: flex;
+    justify-content: space-around;
   }
 }
