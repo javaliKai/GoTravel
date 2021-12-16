@@ -1,4 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap');
+/* Importing and defining font */
+@font-face {
+  font-family: Lato;
+  src: url(../font/Lato/Lato-Regular.ttf);
+}
 
 /* GLOBAL */
 :root {
@@ -32,6 +36,10 @@ body {
 .button:hover {
   background-color: var(--White);
   color: var(--Orange);
+}
+
+h2 {
+  color: var(--Navy);
 }
 
 p {
@@ -146,7 +154,6 @@ p {
   .main-content .about h2 {
     text-transform: capitalize;
     letter-spacing: 2.5px;
-    color: var(--Navy);
     font-size: 2.5rem;
     text-align: center;
   }
@@ -162,11 +169,6 @@ p {
     display: flex;
   }
 
-  /* .main-content .about .about-content img {
-    height: 16.0625rem;
-    width: 23.3125rem;
-  } */
-
   .main-content .about .about-content .about-image {
     background-image: url('../Images/gotravel-group.jpg');
     background-size: cover;
@@ -181,13 +183,12 @@ p {
   .main-content .vision {
     padding-top: 7.8125rem;
     padding-bottom: 7.8125rem;
-    background-color: var(--Lightgray);
+    background-color: var(--White);
   }
 
   .main-content .vision h2 {
     text-transform: capitalize;
     letter-spacing: 2.5px;
-    color: var(--Navy);
     font-size: 2.5rem;
     text-align: center;
   }
@@ -228,7 +229,6 @@ p {
     letter-spacing: 2.5px;
   }
 
-  .main-content .service-intro h2,
   .main-content .service-intro h3 {
     color: var(--Navy);
   }
@@ -302,10 +302,6 @@ p {
     margin-bottom: 7.8125rem;
   }
 
-  .ratings h2 {
-    color: var(--Navy);
-  }
-
   .ratings .ratings-layout {
     display: flex;
     flex-direction: column;
@@ -377,7 +373,6 @@ p {
 
   .main-content .partners h2 {
     text-transform: capitalize;
-    color: var(--Navy);
   }
 
   .main-content .partners .partners-content {
@@ -399,10 +394,6 @@ p {
     background-color: var(--White);
   }
 
-  .main-content .contact h2 {
-    color: var(--Navy);
-  }
-
   /* FOOTER */
   .main-content {
     /* To remove the remaining whitespace below footer, device - footer height */
@@ -412,14 +403,9 @@ p {
   .footer {
     background-color: var(--Navy);
     height: 25vh;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr) 2fr;
-    grid-template-rows: 1fr;
-    grid-template-areas:
-      'socials links1 links2 copyright' /* 1st row */
-      'logo links1 links2 copyright'; /* 2nd row */
+    display: flex;
     align-items: center;
-    justify-items: center;
+    justify-content: space-evenly;
   }
 
   .footer a,
@@ -430,22 +416,6 @@ p {
 
   .footer a i {
     font-size: 1.5625rem;
-  }
-
-  .footer .socials {
-    grid-area: socials;
-  }
-
-  .footer .footer-links .group1 {
-    grid-area: logo;
-  }
-
-  .footer .footer-links .group2 {
-    grid-area: links2;
-  }
-
-  .footer .copyright {
-    grid-area: copyright;
   }
 
   .footer .footer-links a {
@@ -639,10 +609,6 @@ p {
     font-size: 0.9rem;
   }
 
-  .booking-form form .travel-packages .package-item h2 {
-    color: #14213d;
-  }
-
   .booking-form .container .booking-details {
     text-align: center;
     margin-top: 3.125rem;
@@ -658,7 +624,7 @@ p {
   .booking-form .container table th {
     border: 1px solid #dddddd;
     text-align: left;
-    padding: 8px;
+    padding: 1.125rem;
   }
 
   .booking-form .container table tr:nth-child(even) {
@@ -670,7 +636,7 @@ p {
   }
 
   .booking-form .container .finish-button {
-    margin-top: 100px;
+    margin-top: 6.25rem;
     display: block;
     text-align: center;
   }
@@ -686,13 +652,9 @@ p {
   .careers,
   .contact-page,
   .support {
-    margin-top: 7.8125rem;
-    margin-bottom: 7.8125rem;
-  }
-
-  .careers h2,
-  .support h2 {
-    color: var(--Navy);
+    padding-top: 7.8125rem;
+    padding-bottom: 7.8125rem;
+    background-color: var(--White);
   }
 
   .careers table {
@@ -700,6 +662,10 @@ p {
     border-collapse: collapse;
     text-align: center;
     vertical-align: middle;
+  }
+
+  .careers table tr:nth-child(odd) {
+    background-color: var(--Lightgray);
   }
 
   .careers table th {
@@ -711,7 +677,7 @@ p {
   .careers table th,
   .careers table td {
     border: 1px solid var(--Black);
-    padding: 10px;
+    padding: 0.625rem;
     width: 10rem;
   }
 
@@ -721,7 +687,6 @@ p {
     color: var(--White);
     text-decoration: none;
     border: 1px solid var(--Orange);
-    border-radius: 10px;
     display: inline-block;
     transition: all ease-in 0.22s;
     cursor: pointer;
