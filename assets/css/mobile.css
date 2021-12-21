@@ -365,7 +365,6 @@
   /*********************************************/
   /* FOOTER SECTION STYLE STARTS HERE */
   .footer {
-    /* margin-top: 5.8125rem; */
     background-color: var(--Navy);
     min-height: 25vh;
     padding: 3.125rem 3.125rem 0.625rem 3.125rem;
@@ -477,22 +476,22 @@
     padding: 0.5rem;
   }
 
-  .booking-form form {
+  form {
     text-align: left;
   }
 
-  .booking-form form p {
+  form p {
     font-weight: bold;
     margin-top: 1.5625rem;
     margin-bottom: 0.5375rem;
     text-align: left;
   }
 
-  .booking-form form input[type='text'],
-  .booking-form form input[type='email'],
-  .booking-form form input[type='date'],
-  .booking-form form input[type='tel'],
-  .booking-form form select {
+  form input[type='text'],
+  form input[type='email'],
+  form input[type='date'],
+  form input[type='tel'],
+  form select {
     width: 90%;
     height: 1.875rem;
     margin-bottom: 1.25rem;
@@ -501,11 +500,11 @@
     text-align: left;
   }
 
-  .booking-form form input[type='radio'] {
+  form input[type='radio'] {
     cursor: pointer;
   }
 
-  .booking-form form input[type='number'] {
+  form input[type='number'] {
     width: 20%;
     height: 1.875rem;
     margin-bottom: 1.25rem;
@@ -513,27 +512,27 @@
     font-family: 'Lato', sans-serif;
   }
 
-  .booking-form form input[type='checkbox'] {
+  form input[type='checkbox'] {
     width: 1rem;
     height: 1rem;
     margin-right: 0.3125rem;
   }
 
-  .booking-form form textarea {
+  form textarea {
     font-family: 'Lato', sans-serif;
     letter-spacing: 1.2px;
   }
 
-  .booking-form form .radio-input {
+  form .radio-input {
     margin-bottom: 2.8125rem;
     text-align: left;
   }
 
-  .booking-form form input[type='file'] {
+  form input[type='file'] {
     margin-bottom: 2.8125rem;
   }
 
-  .booking-form .next-button {
+  .next-button {
     background-color: var(--Orange);
     padding: 0.625rem;
     margin-top: 1.25rem;
@@ -546,7 +545,7 @@
     cursor: pointer;
   }
 
-  .booking-form .next-button:hover {
+  .next-button:hover {
     background-color: var(--White);
     color: var(--Orange);
   }
@@ -700,5 +699,9 @@
 
   .support-content h3 {
     margin-top: 5.8125rem;
+  }
+
+  .career-image img {
+    width: 100%;
   }
 }
