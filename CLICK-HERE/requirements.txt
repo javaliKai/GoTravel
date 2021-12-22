@@ -1,0 +1,217 @@
+# Phase 1: 21/09/21
+  [x] It should have a proper HTMl5 boilerplate
+  [x] The title should show 'Welcome to GoTravel'
+  [x] It should have a section for the navigation bar
+  [x] It should have a banner section to show a large image
+  [x] It should have a section for the main content
+  [x] It should have a section for the footer
+
+  Navbar:
+  [x] It should have a title of 'GoTravel', and clickable 
+  [x] It should have at least 5 nav links
+  [x] It should have a button 'Book now!' (anchor tag as the button)
+
+  Banner:
+  [x] It should have a h1 text for the title
+  [x] It should have a p tag that describes GoTravel shortly
+  [x] It should have an email address form for newsletter
+
+  Main content:
+  [x] It should have an explanation of: hotel, plane ticket, and travel accomodation
+  [x] It should show top 3 picks from the users
+  [x] It should show 3 ratings from the users
+
+  Footer:
+  [x] Show Copyright text
+  [x] Show 6 footer links
+  [x] Show social media icon
+
+# Phase 2 24/09/21
+#WORKING ON THE NAVBAR
+  Navbar:
+  [x] Modify the links to just have 4 links
+
+  CSS-Navbar:
+  [x] Search for theme color, make it to global variabel
+  [x] Search for fonts (Lato)
+  [x] Setup fontawesome
+
+  [x] Use flexbox to align items nicely
+  [x] Style your own way!
+  [x] Use favicon to add the logo
+
+# Phase 3 01/10/21
+# WORKING ON THE BANNER
+  [x] The banner should show an Image that fills the whole width
+  [x] The banner content should be placed at the very center of the image
+  [x] The h1 text should be big enough
+  [x] The form should be stylised to a decent view
+  [x] The button should be stylised following the global button style
+  [x] Fix the container overlapping issue
+  [x] Make the container background to be transparent
+
+# Phase 4 16/10/21
+# WORKING ON THE MAIN CONTENT
+  [x] Set the padding beautifully (with content-padding global class)
+  [x] Divide the main content into 3 different sections
+
+-- Service Intro
+  [x] Align the Why Choose GoTravel to the center and add icons
+  [x] Add padding to the service intro items
+
+-- Top Picks
+  [x] Change the destination to Paris, Bali, London, and add Rome
+  [x] The top picks should be like a card with the respective picture of destination (use flexbox)
+  [x] In the top picks card, add a short description
+  [x] When the card gets hovered, slightly increase the size (use transform: scale(value))
+  [x] Make the border a little bit round
+  [x] Add some shadow
+
+-- Ratings
+  [x] The ratings display should be like a comment with a profile
+  [x] Arrange it with a flexbox
+  [x] Add proper margin and spacing
+
+# Phase 5 25/10/21
+# WORKING ON THE FOOTER
+  [x] The footer background should be Navy
+  [x] Remove the whitespace below footer using the min-height property (set to content)
+  [x] Replace all of the social media links into clickable icons 
+  [x] Make a grid display for the navigation links (3 rows, 3 cols)
+
+# Phase 6 31/10/21
+# WORKING ON THE 'BOOK NOW' PAGE
+  # BOOKNOW1
+  [x] Create a new HTML page for the 'book now' page
+  [x] The page should have a button at the upper left to go back to the landing page
+  [x] The page should contain only one square of container
+  [x] The booking page should have a background-image
+  ** An interesting thing encountered: the top property worked with height set on the parent, but not with min-height set on the parent.
+  [x] In the container it should have: form title, progress bar, and the input form
+  [x] Resize the form box width
+  [x] Make the background image span the whole screen
+
+# Phase 7 4/11/21
+# WORKING ON THE 'BOOK NOW' PAGE
+  #BOOKNOW1
+  [x] Make the title centered
+  [x] Create the step display
+  [x] All Ps in the form element should be bold
+  [x] Style the input boxes
+  [x] Make sure all boxes follow the page styling
+  [x] Restyle the next button
+  booknow1 done...
+
+  #BOOKNOW2
+  [x] There should exist a destination form
+  [x] There should exist a flight form that contains departure and return
+    [x] The departure and return should be side by side
+  [x] There should exist a travel service packages form. The form should be like a card
+    [x] The card should contain a radio input
+    [x] The card should have a brief travel package description
+
+# Phase 8 5/11/21
+# WORKING ON THE 'BOOK NOW' PAGE
+  #BOOKNOW3
+  [x] There should exist a container just like the other booking page
+  [x] Inside the container, make sure it has a header
+  [x] The container should contain a HTML table that shows an arbitrary data from the booking page
+  *INTERESTING THING: It seems that I can't style the HTML table through class selector. I need to style it explicitly with the element selector.
+  [x] There should exist a confirm booking button and direct the user to another new page.
+
+  #FINISH BOOKING
+  [x] There should exist a finish booking page that redirects the user to the landing page.
+  ### 'BOOKNOW PAGE IS DONE!' 
+
+Idea: I think I want to add the navigation links content in the landing page. So it makes the landing page more stuffed with content.
+
+# Phase 9 6/11/2021
+# CREATING THE ABOUT US SECTION
+  [x] There should exist an 'about us' section in the landing page above the 'why choose GoTravel'
+  [x] The about us section should describe GoTravel briefly.
+  [x] There should be an image as decoration
+  [x] The image and text should be side by side
+  [x] Connect the about section with the navigation links
+  [] There should be a navy rectangle that act as a divider below the h2
+
+# CREATING THE CONTACT SECTION
+[x] There should be at the very bottom of the page
+[x] The contact section should contain an h2 element with a short explanation
+[x] The contact content should contain email, telephone, and location
+[x] The contact should be connected to the navigation link
+
+# CREATING THE PARTNERS SECTION
+[x] The partner section should be below the user reviews
+[x] The partner section should contain images of GoTravel's business partners
+**NAVIGATION LINKS FINISHED! I really hope to embed a video in the landing page, but I think the size of this project folder will be too big. So, nvm then.
+
+# Phase 10 19/11/2021
+# THE MEDIA QUERY
+  [x] The navbar should only show GoTravel logo at the left and book now button at the right
+  [x] Minimize the gray container at the banner section
+  [x] Make the content of banner section centered
+  [x] The about us section should be centered
+  [x] Change the image to css background image
+  [x] Resize the image **BACKGROUND SIZE: CONTAIN alllowing the user to resize the image without changing the image width orientation**
+  [x] Add a proper margin and padding
+
+# Phase 11 20/11/2021
+# THE MEDIA QUERY (PT.2)
+  [x] The service intro section should be all centered
+  [x] The service intro section should have a proper margin and padding
+  [x] Make sure that the service intro section heading is colored navy
+  [x] Make sure the icons have a proper size
+  [x] The top picks section should be all centered
+  [x] Make sure the top picks section is a flexbox
+  [x] Resize the image
+  [x] Make sure the flexbox child's content doesn't exceed the container it is in
+  [x] Make sure to add a proper padding and margin
+  [x] The user ratings section should be all centered
+  [x] The user ratings section should be a flexbox with column direction type
+  [x] Make the profile and rating-head at the top of the rating-content
+  [x] Add a proper padding and margin for the rating section
+
+# Phase 12 26/11/2021
+# THE MEDIA QUERY (PT.3)
+  [x] Add a proper margin and padding to the partners section
+  [x] Resize the image beautifully
+  [x] Add spacing for each of the image
+
+  [x] Add a proper margin and padding to the contact section
+  [x] Make sure the heading is colored navy
+  [x] Make sure the text content is aligned to the center
+  
+  [x] The footer section should all be centered
+  [x] Add a proper margin and padding to the footer section
+  [x] Resize the font
+
+# Phase 13 30/11/2021
+# THE MEDIA QUERY (PT.4)
+  [x] Redefine the container height
+  [x] Resize the heading size
+  [x] Change the step bar to just a text
+  [x] The input box and its label should be on the left
+  [x] The service package flex direction should be column
+  [x] Resize the service package
+  [x] The booking caption should be left-aligned
+
+# Phase 14 13/12/2021
+# TOUCHING-UP THE UI AND ADDITIONAL FEATURES
+  [x] Wrap the about us, partners, and contact section with a white background
+    [x] Redefine the content-padding
+  [x] Make a new page for each of the navigation link
+    [x] Make sure to link them to the navigation link
+  [x] Make the page for careers and support
+  [x] Fill the content in about, reviews, careers, and contact
+  **NEW INSIGHT: use vertical-align property to adjust the td orientation in table**
+
+# Phase 15 16/12/2021
+# TOUCHING-UP THE UI AND ADDITIONAL FEATURES
+  [x] Define the navigation links pages for the mobile version
+  [x] Add another column to the careers table
+
+# Phase 16 21/12/2021 (FINAL)
+# ADDING ANIMATIONS AND FINALIZING
+  [x] Add an animation for the book now button
+  [x] Add an animation for the logo button
+  [x] Add an opening animation for some of the images
