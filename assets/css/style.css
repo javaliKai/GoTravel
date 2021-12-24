@@ -329,7 +329,6 @@ p {
 
   .ratings .ratings-layout .avatar {
     height: inherit; /* The height will inherit the rating item container. So, it looks like a block at the left side */
-    float: left;
   }
 
   .ratings .ratings-layout .avatar img {
