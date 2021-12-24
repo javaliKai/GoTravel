@@ -532,7 +532,7 @@ p {
   form input[type='date'],
   form input[type='tel'],
   form select {
-    width: 90%;
+    width: 100%;
     height: 1.875rem;
     margin-bottom: 1.25rem;
     padding: 0.1875rem;
