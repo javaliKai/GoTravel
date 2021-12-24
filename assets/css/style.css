@@ -118,7 +118,6 @@ p {
     top: 15%;
     padding: 1.875rem;
     background-color: rgba(255, 255, 255, 0.78);
-    animation: pull-side 3s ease;
   }
 
   .banner .container h1 {
@@ -248,7 +247,6 @@ p {
 
   .main-content .service-intro i:hover {
     font-size: 3.125rem;
-    animation: vibrate 1s;
   }
 
   /* TOP PICKS */
@@ -483,7 +481,6 @@ p {
     top: 15%;
     padding: 1.875rem;
     background-color: rgba(255, 255, 255, 0.78);
-    animation: lift 1s ease;
   }
 
   .booking-form .container-header {
@@ -714,8 +711,25 @@ p {
 
   .career-image img {
     width: 100%;
-    animation: pull-side 4.5s;
+    /* animation: pull-side 4.5s; */
   }
+}
+
+/* Global style animation */
+.career-image img {
+  animation: pull-side 4.5s;
+}
+
+.booking-form .container {
+  animation: lift 1s ease;
+}
+
+.main-content .service-intro i:hover {
+  animation: vibrate 1s;
+}
+
+.banner .container {
+  animation: pull-side 3s ease;
 }
 
 /* Pull-side animation */
